@@ -13,7 +13,7 @@
 ## Click CLI Notes
 1. `@click.command()`: The core command that is executed when the CLI is called.
 2. `@click.group()`: Adding multiple commands to the CLI nested under one core CLI function.
-3. `@click.option('--option_name', default=N, help='Details about option'): Add an option to the CLI.
-4. `@click.argument('argument_name'): Add an argument to the CLI.
+3. `@click.option('--option_name', default=N, help='Details about option')`: Add an option to the CLI.
+4. `@click.argument('argument_name')`: Add an argument to the CLI.
 
 Learn more Click: https://click.palletsprojects.com/en/8.0.x/ 
