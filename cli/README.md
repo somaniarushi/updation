@@ -17,3 +17,14 @@
 4. `@click.argument('argument_name')`: Add an argument to the CLI.
 
 Learn more Click: https://click.palletsprojects.com/en/8.0.x/ 
+
+## PyInquirer CLI Notes
+Every part of the CLI is a `Token`, with some of the core tokens being `Token.Separator`, `Selected`, `Pointer`, `Instruction`, `Answer`, `Question`, `QuestionMark` etc. You can style these separators using `style_from_dict`. 
+
+Then establish a list of questions, each with a type, message, name, and some choices if appropriate. Also should have a validator function associated with the choices that spits out an error message when you mess up.
+
+Finally pass in the questions and style sheet to the `prompt` function, which returns to us a list of answers to the questions.
+
+## Learn More: 
+- https://codeburst.io/building-beautiful-command-line-interfaces-with-python-26c7e1bb54df
+- https://medium.com/geekculture/build-interactive-cli-tools-in-python-47303c50d75
