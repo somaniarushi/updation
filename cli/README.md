@@ -1,0 +1,6 @@
+# Command Line Tutorial
+
+## Command Line Basics
+1. Arguments: Required parameter. Example: `pip install django`
+2. Options: Unrequired parameter. Example: `pip install django --cache-dir ./dir`
+3. Flag: Enable or disable a certain feature. Example: `pip install django --verbose`
